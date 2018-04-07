@@ -1,0 +1,310 @@
+body{
+  font-family:  Tahoma;
+  padding: 0;
+  max-width: 1366px;
+  min-width: 900px;
+  margin: 0 auto;
+}
+.clearfix:after{
+    content:" ";
+    display: table;
+    width: 100%;
+    clear: both;
+}
+div{
+  box-sizing: border-box;
+}
+header{
+  background: url(../sources/visk.jpg) no-repeat center top/Cover;
+  max-height: 738px;
+}
+/*для пропорционального уменьшение блока
+  при уменьшение размера окна */
+div.container {
+  width:100%;
+}
+/*для пропорционального уменьшение блока
+  при уменьшение размера окна */
+div.container > div{
+   position:relative;
+   width:100%;
+   padding-bottom:50%;
+}
+/*для пропорционального уменьшение блока
+    при уменьшение размера окна*/
+div.container > div > div{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+/*курсор для клика*/
+a,.clic{
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*логотип*/
+.logo{
+ margin-left: 5%;
+ margin-top:47px;
+ float: left;
+}
+/*Вершенее меню*/
+nav{
+  float:right;
+  margin-top: 43px;
+  margin-right: 5%;
+}
+.menu{
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.menu li{
+  float: left;
+  list-style-type: none;
+}
+ .menu a{
+  display: table;
+  color: #ffffff;
+  text-decoration: none;
+  font-size:20px;
+  margin: 0 auto;
+  margin-right: 30px;
+}
+
+#radius{ /*обведеное Hello*/
+  padding: 5px 15px;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  margin-top: -5px;
+
+}
+
+.menu a:hover{
+  color: #d7d7d7;
+  transform: scale(1.2);
+}
+/*меню гамбургер*/
+.menuToggle{
+  color: #ffffff;
+  display: none;
+  float:right;
+  width: 40px;
+  height: 40px;
+  font-size: 38px;
+  margin-top: 18px;
+  margin-right: 40px;
+  text-align: center;
+}
+/*Заголвки на первом модуле*/
+.title h1{
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing:0.1em;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 292px;
+  font-weight:100;
+}
+.title_first{
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/*зеленая кнопка со стрелкой вниз*/
+.hover{
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: url(../sources/hover.png) no-repeat center;
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
+  top: 625px;
+}
+.hover:hover{
+  opacity: 0.8;
+}
+
+/*------------Второй модуль--------*/
+section.second{
+  min-height: 485px;
+}
+/*Блок содержащий: second,<p>,<h3> и readmore*/
+.container-second{
+ max-width: 932px;
+ margin: auto;
+ padding-left: 10px;
+}
+
+.text_second{
+  float: left;
+  margin-top: 115px;
+  width: 425px;
+}
+h3{
+  color: #333b46;
+  font-family:  Source Sans Pro;
+  font-weight:100;
+  font-size: 22px;
+}
+p{
+  color: #81868e;
+  font-family:  Source Sans Pro;
+  font-weight:100;
+  font-size: 16px;
+}
+.readmore{
+  display: block;
+  border: 1px solid #333b46;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333b46;
+  text-align: center;
+  padding: 7px;
+  width: 140px;
+  font-size: 18px;
+}
+.readmore:hover{
+  color: #000000;
+  border-color: #000000;
+  transform: scale(1.2);
+}
+/*Изображение электроники*/
+.cover{
+  display:block;
+  width: 400px;
+  height: 420px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 10px;
+  padding-right: 10px;
+
+}
+/*----------Третий модуль---------*/
+section.third{
+  min-height: 620px;
+  background-color: #f3f3f3;
+}
+.text_third{
+  margin: auto;
+  padding-top: 58px;
+  text-align: center;
+
+}
+.text_third > p{
+  margin: auto;
+  margin-bottom: 5px;
+  max-width: 460px;
+}
+.third_img{
+  width: 221px;
+  margin: auto;
+  margin-top: 55px;
+}
+.third_img > img{
+  margin-left: 25px;
+
+}
+.third_img > img:first-child{
+  margin-left:0;
+}
+.third_img > img:hover{
+  opacity: 0.8;
+}
+h4{
+  color: #333b46;
+  font-family:  Source Sans Pro;
+  font-weight:100;
+  font-size: 20px;
+}
+.text_third_2{
+  max-width: 983px;
+  margin: auto;
+  padding-left: 10px;
+}
+.text_third_2 >p{
+  float: left;
+  width: 320px;
+}
+.text_third_2 >p:last-child{
+ width: 520px;
+ float:right;
+}
+/*----------Четвертый модуль---------*/
+section.fourth{
+  min-height: 665px;
+  border: 1px solid red;
+}
+.project{
+  height: 432px;
+  border:1px solid green;
+}
+.project > img{
+  float: left;
+  margin: auto;
+}
+
+
+/*----------Последний модуль---------*/
+footer{
+  height: 600px;
+}
+/*действия при уменьшение экрана до мин знач*/
+@media screen and (max-width: 1360px) {
+  /*первый модуль*/
+    .title h1{
+        font-size: 3.3vw;
+        margin-top: 21.3vw;
+      }
+      .title_first{
+        font-size: 1.46vw;
+      }
+      .hover{
+        top:46vw;
+      }
+      /*Второй модуль*/
+}
+@media screen and (max-width: 950px) {
+  /*первый модуль*/
+    .menu{
+        display: none;
+     }
+     .menu li{
+       float: none;
+     }
+    .menuToggle {
+         display: inline-block;
+      }
+      .logo{
+       margin-left: 40px;
+     }
+     .title h1{
+       font-size: 28px;
+     }
+     .title_first{
+       font-size: 13px;
+     }
+     /*Второй модуль*/
+    .container-second{
+       width: 425px;
+    }
+    .cover{
+      margin: auto;
+      margin-top: 35px;
+    }
+    .text_second{
+      margin-top: 10px;
+    }
+    /*Третий модуль*/
+    .text_third_2{
+      width: 425px;
+      margin: auto;
+    }
+    .text_third_2 >p:last-child{
+      width: 420px;
+      margin-left: 0;
+}
