@@ -66,7 +66,8 @@ nav{
   list-style-type: none;
 }
  .menu a{
-  display: table;
+  text-align: center;
+  display: block;
   color: #ffffff;
   text-decoration: none;
   font-size:20px;
@@ -120,10 +121,8 @@ nav{
   height: 40px;
   width: 40px;
   background: url(../sources/hover.png) no-repeat center;
-  position: relative;
   margin: auto;
-  margin-bottom: 30px;
-  top: 625px;
+  margin-top: 10%;
 }
 .hover:hover{
   opacity: 0.8;
@@ -307,7 +306,7 @@ footer{
         font-size: 1.46vw;
       }
       .hover{
-        top:46vw;
+
       }
       /*Второй модуль*/
 }
@@ -315,13 +314,31 @@ footer{
 
   /*первый модуль*/
     .menu{
-        display: none;
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+        top:10%;
+     }
+     nav{
+       display: none;
+       position: absolute;
+       background-color: rgba(0, 0, 0, 0.9);
+       margin: auto;
+       height: 400%;
+       width: 100%;
+       z-index: 3;
      }
      .menu li{
        float: none;
+       margin: 20px;
+     }
+     .menu a{
+       margin: auto;
+       font-size: 20px;
      }
     .menuToggle {
-         display: inline-block;
+         display: block;
+         z-index: 5;
       }
       .logo{
        margin-left: 40px;
@@ -332,7 +349,9 @@ footer{
      .title_first{
        font-size: 13px;
      }
-
+     .hover{
+       margin-top: 7vh;
+     }
      /*Второй модуль*/
     .container-second{
        width: 425px;
