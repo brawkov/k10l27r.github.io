@@ -17,6 +17,7 @@ div{
 header{
   background: url(../sources/visk.jpg) no-repeat center top/Cover;
   max-height: 738px;
+  min-height: 300px;
 }
 /*для пропорционального уменьшение блока
   при уменьшение размера окна */
@@ -95,8 +96,8 @@ nav{
   width: 40px;
   height: 40px;
   font-size: 38px;
-  margin-top: 18px;
-  margin-right: 40px;
+  margin-top: 10px;
+  margin-right: 30px;
   text-align: center;
 }
 /*Заголвки на первом модуле*/
@@ -336,21 +337,25 @@ footer{
        margin: auto;
        font-size: 20px;
      }
+
     .menuToggle {
          display: block;
          z-index: 5;
       }
       .logo{
-       margin-left: 40px;
+        margin-left: 3%;
+        margin-top: 25px;
+        transform: scale(0.9)
      }
      .title h1{
-       font-size: 28px;
+       margin-top: 15vw;
+       font-size: 30px;
      }
      .title_first{
        font-size: 13px;
      }
      .hover{
-       margin-top: 7vh;
+       bottom: 2vh;
      }
      /*Второй модуль*/
     .container-second{
@@ -379,7 +384,12 @@ footer{
   .title h1{
     margin-top: 100px;
   }
+  .logo{
+    margin-left: 3%;
+    margin-top: 25px;
+    transform: scale(0.9);
+  }
   .hover{
     position:relative;
-    top: 220px;
+    bottom: 8%;
   }
