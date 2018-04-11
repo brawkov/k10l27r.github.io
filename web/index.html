@@ -16,7 +16,8 @@
        <div>
             <img src="sources/logo.png" alt="Логотип" class="logo">
 
-            <div class="clic menuToggle">&#9776;</div>
+            <div class="clic menuToggle"id="open">&#9776;</div>
+            <div class="clic menuToggle" id="close">&#215;</div>
           <nav ><!--Меню-->
                <ul class="menu" >
                  <li><a id="radius" href="#">Hello</a></li>
@@ -61,7 +62,7 @@
 
   <!--Третий модуль-->
    <section class="third">
-      <div class="container-third clearfix">
+      <div class="clearfix">
           <div class="text_third">
              <h3>DETAILS ABOUT BOUNCY</h3>
              <p>
@@ -69,68 +70,118 @@
                blanditiis praesentium
              </p>
           </div>
-
-            <!--<svg class="pereclich"  width="200" height="50">
-              <circle r="25" cx="25" cy="25" fill="#81868e"/>
-              <circle r="25" cx="100" cy="25" fill="#81868e"/>
-              <circle r="25" cx="175" cy="25" fill="#81868e"/>
-            </svg>-->
-            <div class="pereclich">
-              <input class="one" type="radio" name="slider" checked>
-              <input class="two" type="radio" name="slider">
-              <input type="radio" name="slider">
-          </div>
-          <div class="slider">
-            <div class="slide slider1">
-              <img src="sources/serd.png" alt="Круг с сердцем"/>
-            </div>
-            <div class="slide slider2">
+          <div class="button-slider">
+            <button  class="click_one" type="button">
+              <img src="sources/serd.png" alt="круг с сердцем"/>
+            </button>
+            <button class="click_two" type="button">
               <img src="sources/mouse.png" alt="Круг с мышкой"/>
-            </div>
-            <div class="slide slider3">
+            </button>
+            <button class="click_three" type="button">
               <img src="sources/lamp.png" alt="Круг с лампочкой"/>
+            </button>
+          </div>
+
+
+          <div class="slider">
+            <div class="text_third_2 slider1">
+              <h4>Favorite</h4>
+              <p>
+                At vero eos et accusamus et iusto odio
+                dignissimos ducimus qui blanditiis
+
+                corrupti quos dolores
+              </p>
+              <p>
+
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+              </p>
+            </div>
+            <div class="text_third_2 slider2">
+              <h4>Development</h4>
+              <p>
+                At vero eos et accusamus et iusto odio
+                d
+                praesentium voluptatum deleniti atque
+                corrupti quos dolores
+              </p>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                xcepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+              </p>
+            </div>
+            <div class="text_third_2 slider3">
+              <h4>Creative Ideas</h4>
+              <p>
+                At vero eos et accusamus et iusto odio
+                dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque
+                corrupti quos dolores
+              </p>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+              </p>
             </div>
           </div>
-
-          <div class="text_third_2 clearfix">
-            <h4>Creative Ideas</h4>
-            <p>
-              At vero eos et accusamus et iusto odio
-              dignissimos ducimus qui blanditiis
-              praesentium voluptatum deleniti atque
-              corrupti quos dolores
-            </p>
-            <p>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecati cupiditate
-              non provident, similique sunt in culpa qui officia deserunt
-              mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-            </p>
-          </div>
-
       </div>
    </section>
   <!--Четвертый модуль-->
 <section class="fourth">
-  <div class="container-third clearfix">
-      <div class="text_third">
-         <h3>FEATURED PROJECTS</h3>
-         <p>
-           At vero eos et accusamus et iusto odio dignissimos ducimus qui
-           blanditiis praesentium
-         </p>
-      </div>
-      <div class="project">
-          <!--<img alt="Фото" src="sources/project_1.jpg" />-->
-          <img alt="Фото" src="sources/project_2.jpg" />
-          <img alt="Фото" src="sources/project_3.jpg" />
-          <!--<img alt="Фото" src="sources/project_4.jpg" />
-          <img alt="Фото" src="sources/project_5.jpg" />-->
-      </div>
+  <div class="container-fourth clearfix">
+
+         <div class="text_third">
+           <h3>FEATURED PROJECTS</h3>
+           <p>
+             At vero eos et accusamus et iusto odio dignissimos ducimus qui
+             blanditiis praesentium
+           </p>
+         </div>
+         <div class="project">
+                 <img id="project_1"ialt="Фото" src="sources/project_1.jpg" />
+                 <img alt="Фото" src="sources/project_2.jpg" />
+                 <img alt="Фото" src="sources/project_3.jpg" />
+         </div>
+         <div class="polosa">
+           <p>
+             At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+           </p>
+           <a class="readmore" href="#"> Submit Now </a>
+         </div>
   </div>
 </section>
 
+<section class="five">
+  <div class="text_third">
+    <h3>OUR SERVICES</h3>
+    <p>
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui
+      blanditiis praesentium
+    </p>
+  </div>
+  <div class="button-slider_2">
+    <button  class="click_one" type="button">
+      <img src="sources/serd.png" alt="круг с сердцем"/>
+    </button>
+    <button class="click_two" type="button">
+      <img src="sources/mouse.png" alt="Круг с мышкой"/>
+    </button>
+    <button class="click_three" type="button">
+      <img src="sources/lamp.png" alt="Круг с лампочкой"/>
+    </button>
+    <button class="click_fourth" type="button">
+      <img src="sources/lamp.png" alt="Круг с лампочкой"/>
+    </button>
+  </div>
+</section>
    <footer>
 
       <div class="container">

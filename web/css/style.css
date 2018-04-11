@@ -100,6 +100,9 @@ nav{
   margin-right: 30px;
   text-align: center;
 }
+#close{
+  display: none;
+}
 /*Заголвки на первом модуле*/
 .title h1{
   font-size: 45px;
@@ -200,63 +203,41 @@ section.third{
   margin-bottom: 5px;
   max-width: 460px;
 }
-
-
-.pereclich{
-  width: 200px;
-  display: block;
-  margin:0 auto;
-  border: 1px solid red;
-}
-
-.one{
-  background: rgb(5, 255, 0);
-  margin: 0;
+button{
+  outline: none;
   width: 50px;
   height: 50px;
+  background-color: #81868e;
+  border:none;
+  border-radius: 50px;
+  text-decoration:none;
+  margin-right: 26px;
 }
-.slider{
-  margin: auto;
-  width: 420px;
-  height: 300px;
-  background: rgb(114, 210, 202);
+button:last-child{
+  margin-right: 0px;
 }
-.slider1{
+button:hover{
+  background: #19bd9a !important;
+}
+.click_one{
+  background-color: #19bd9a;
+}
 
-  width:4250px;
-  height: 300px;
-  position: relative;
-  background: rgb(238, 43, 17);
-  z-index: 5;
-  display: none;
+.button-slider{
+  width: 215px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top:58px;
 }
-.slider2{
-  width: 420px;
-  height: 300px;
-  position: relative;
-  background: rgb(43, 255, 0);
-  display: none;
-}
-.slider3{
-  width: 420px;
-  height: 300px;
-  position: relative;
-  background: rgb(255, 220, 0);
-  display: none;
-}
-.one:active .slider1{
+button > img{
   display: block;
-}
-
-circle:hover{
-  fill: red;
-}
-
-.third_img > img:first-child{
-  margin-left:0;
-}
-.third_img > img:hover{
-  opacity: 0.8;
+  margin: 0 auto;
+  }
+.slider2{
+  display: none;
+  }
+.slider3{
+  display: none;
 }
 h4{
   color: #333b46;
@@ -279,25 +260,58 @@ h4{
 }
 /*----------Четвертый модуль---------*/
 section.fourth{
-  min-height: 665px;
-  border: 1px solid red;
+  min-height: 659px;
 }
 .project{
-  height: 432px;
-  border:1px solid green;
+  display:block;
+  width: 100%;
+  margin-top:60px;
 }
 .project > img{
   float: left;
-  margin: auto;
 }
-
-
+.polosa{
+  clear: both;
+  width: 100%;
+  min-height: 110px;
+  background: url(../sources/progect_footer.jpg) no-repeat center;
+}
+.polosa > a{
+  color: #ffffff;
+  float: right;
+  margin-right:8%;
+  margin-top:37px;
+  border-color: #ffffff;
+}
+.polosa > p{
+  float: left;
+  margin-left: 8%;
+  margin-top:37px;
+  font-size: 20px;
+  color: #ffffff;
+}
+/*---------------Пятый модуль-------*/
+section.five{
+  background-color: #f3f3f3;
+  min-height: 635px;
+  border: 1px solid red;
+}
+.button-slider_2{
+  border: 1px solid red;
+  width: 60px;
+  margin-left: 170px;
+}
+.button-slider_2 button{
+  margin: 0;
+  display: table-cell;
+}
 /*----------Последний модуль---------*/
 footer{
   height: 600px;
 }
 /*действия при уменьшение экрана до мин знач*/
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1385px) {
+
   /*первый модуль*/
     .title h1{
         font-size: 3.3vw;
@@ -306,10 +320,10 @@ footer{
       .title_first{
         font-size: 1.46vw;
       }
-      .hover{
-
+      /*Чевертый модуль*/
+      .project > img{
+          height:22.93585vw;
       }
-      /*Второй модуль*/
 }
 @media screen and (max-width: 950px) {
 
@@ -376,7 +390,35 @@ footer{
     .text_third_2 >p:last-child{
       width: 420px;
       margin-left: 0;
+    }
+    /*Чевертый модуль*/
+    .project{
+      margin:auto;
+      margin-top:60px;
+      width: 425px;
+    }
+    .project > img{
+      float:none;
+      height: 250px;
+      display: block;
+      margin:auto;
+    }
+    #project_1{
+      width:425px;
+      height: auto;
+    }
+    .polosa p{
+      width: 55%;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .polosa a{
+      width: 120px;
+      font-size: 17px;
+      margin-right: 3%;
+    }
 }
+
 @media screen and (max-width: 600px) {
   body{
     max-width: 600px;
