@@ -85,9 +85,7 @@ nav{
   border: 1px solid #ffffff;
   border-radius: 25px;
   margin-top: -5px;
-
 }
-
 .menu a:hover{
   color: #d7d7d7;
   transform: scale(1.2);
@@ -147,9 +145,11 @@ section.second{
 }
 
 .text_second{
+  padding-right: 15px;
+  padding-left: 15px;
   float: left;
   margin-top: 115px;
-  width: 425px;
+  width: 415px;
 }
 h3{
   color: #333b46;
@@ -159,7 +159,7 @@ h3{
 }
 p{
   color: #81868e;
-  font-family:  Source Sans Pro;
+  font-family: Source Sans Pro;
   font-weight:100;
   font-size: 16px;
 }
@@ -173,7 +173,6 @@ p{
   padding: 7px;
   width: 140px;
   font-size: 18px;
-  margin-left: 15px;
 }
 .readmore:hover{
   color: #000000;
@@ -189,7 +188,7 @@ p{
   margin-left: 70px;
   margin-top: 10px;
   padding-right: 10px;
-
+  padding-left: 15px;
 }
 /*----------Третий модуль---------*/
 section.third{
@@ -200,7 +199,6 @@ section.third{
   margin: auto;
   padding-top: 58px;
   text-align: center;
-
 }
 .text_third > p{
   margin: auto;
@@ -311,9 +309,8 @@ section.five{
   display: block;
   margin-top: 17px;
 }
-.text_five{
-    padding: 5px;
-}
+
+
 .slider_five{
   max-width:410px;
   float: left;
@@ -354,9 +351,9 @@ section.five{
 .diograma img{
     margin-left:40px;
    }
-   .diograma img:first-child{
-       margin-left:0;
-      }
+.diograma img:first-child{
+     margin-left:0;
+    }
   .five_footer {
     float: left;
     background: url("../sources/ayer.jpg") no-repeat center;
@@ -405,7 +402,6 @@ section.six{
   }
   .gallery{
     display: block;
-    border: 1px solid blue;
     max-width: 1092px;
     margin: auto;
     margin-top: 75px;
@@ -689,7 +685,7 @@ section.eleven{
   max-width: 935px;
   min-height: 270px;
   margin: auto;
-
+  margin-top: 60px;
 }
 .contact > div{
   width: 288px;
@@ -770,6 +766,22 @@ section.twelwe{
 section.thereten{
   min-height: 495px;
 }
+.map{
+  float: left;
+  width:100%;
+  min-height: 495px;
+  position: relative;
+  z-index: 3;
+  background:rgba(0, 0, 0, 0.85);
+}
+.map p {
+  color: #ffffff;
+  clear: both;
+  margin-top: 15%;
+  text-align: center;
+  font-size: 30px;
+}
+
 /*----------Последний модуль---------*/
 footer{
   min-height: 290px;
@@ -911,7 +923,7 @@ footer{
       margin-right: 15px;
      }
         /*---------------Восьмой модуль*/
-    .testimonials_1 >img{
+    .testimonials_1 > img{
       margin-left: 10px;
     }
     /*---------------Девятый модуль*/
@@ -920,11 +932,11 @@ footer{
       max-width: 230px;
       margin-top: 50px;
     }
-        .price{
-          margin: auto;
-          float: none;
-          margin-top:20px;
-        }
+    .price{
+      margin: auto;
+      float: none;
+      margin-top:20px;
+     }
     .price:last-child{
       margin-bottom: 30px;
     }
@@ -949,7 +961,7 @@ footer{
     border: 1px solid #81868e;
   }
 
-  }
+}
 @media screen and (max-width: 760px){
   .team{
     width: 425px;
@@ -975,21 +987,29 @@ footer{
     position:relative;
     bottom: 8%;
   }
-  p{
-    padding-left: 15px;
+  /*---------------Третий модуль*/
+  .third  h4{
+    margin-left: 5px;
   }
+  .text_third_2 >p:last-child{
+    float: left;
+    width: 400px;
+    }
   /*---------------Пятый модуль*/
-  .button-slider_2{
+  .button-slider_2 {
     display: block;
     min-width: 300px;
     height: 70px;
     margin-top: 40px;
-    margin-left: 8vw;
+    margin-left: 40px;
   }
   .button-slider_2 button{
     display: block;
     float: left;
     margin 0;
+  }
+  .slider_five{
+   margin-left: 15px;
   }
   .diograma{
     width: 425px;
@@ -997,10 +1017,15 @@ footer{
     margin-left: 5px;
   }
   .diograma img{
-      margin-left:20px;
+      margin-left:15px;
      }
+  /*---------------Восьмой модуль*/
+   .info{
+     margin-left: 10px;
+   }
      /*---------------Восьмой модуль*/
   .testimonials_1 >img{
+    padding-top:10px;
     display: block;
     margin: auto;
     margin-top: 60px;
@@ -1016,15 +1041,17 @@ footer{
   .eight_button{
     margin-bottom: 30px;
   }
+
   /*--------------Девятый модуль*/
   .price:last-child{
     margin-bottom: 20px;
   }
   /*--------------Десятый модуль*/
   .ten  input{
-    width:52vw;
+    width: 60vw;
   }
    .email_contener{
-     width: 98vw;
+     margin-top: 30px;
+     width: 90%;
    }
 }

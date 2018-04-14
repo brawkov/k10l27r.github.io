@@ -109,4 +109,9 @@ $('.gallery').resize(function() {
       $('#nine_6').slideToggle(300,function(){
       });
     });
+
+    $('.map').click(function() {
+       $('.map').css({"display":"none"});
+
+                           });
 });
