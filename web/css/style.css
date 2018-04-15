@@ -894,12 +894,14 @@ footer{
     }
     .project > img{
       float:none;
+      width: 415px;
       height: 250px;
       display: block;
       margin:auto;
+      object-fit: cover;
     }
     #project_1{
-      width:425px;
+      width:415px;
       height: auto;
     }
     .polosa p{
@@ -912,7 +914,6 @@ footer{
       font-size: 17px;
       margin-right: 3%;
     }
-        /*---------------Пятый модуль*/
         /*---------------седьмой модуль*/
     .info{
       margin:0;
