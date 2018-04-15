@@ -1,13 +1,10 @@
 jQuery(document).ready(function() {
 
   $('.menuToggle').click(function() {
-    if($('body').css('overflow') === 'hidden')
     {
-       $('body').removeAttr('style');
        $('#open').removeAttr('style');
     }
     else {
-      $('body').css({"overflow":"hidden"});
       $('#open').css({"display":"none"});
     }
     $('nav,#close').slideToggle(500,function(){
@@ -60,10 +57,8 @@ $('.click_fourth').click(function() {
     $('.slider4').css({"display":"block"});
         });
 //галерея на шестом модуле
-$('.gallery').resize(function() {
 
-     $('body').css({"background":"red"});
-    });
+
 //слайдер на седьмом модуле
   $('.seven_one').click(function() {
       $('.seven_one').css({"background-color":"#19bd9a"});

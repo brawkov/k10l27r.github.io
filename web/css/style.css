@@ -390,20 +390,23 @@ section.six{
   background-color: #f3f3f3;
 }
   .buttom_galery{
-    display: none;
-    border: 1px solid red;
-    width: 600px;
+    max-width: 600px;
+    min-height: 40px;
     margin: 0 auto;
     margin-top: 80px;
   }
   .buttom_galery >button{
-    background-color: white;
-    border-bottom: 1px solid black;
-    border-radius:0;
+    border:none;
+    border-bottom: 2px solid #19bd9a;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: #f3f3f3;
+    text-decoration:none;
   }
   .gallery{
     display: block;
-    border: 1px solid blue;
     max-width: 1092px;
     margin: auto;
     margin-top: 75px;
@@ -829,6 +832,11 @@ footer{
   .diograma img{
     float: none;
   }
+      /*---------------Шестой модуль*/
+    .gallery{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
   /*----------Восьмой модуль--*/
   .testimonials_info{
     width:70vw;
@@ -1031,6 +1039,7 @@ footer{
   .diograma img{
       margin-left:15px;
      }
+
   /*---------------Восьмой модуль*/
    .info{
      margin-left: 10px;
