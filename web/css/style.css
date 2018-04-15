@@ -512,12 +512,14 @@ section.six{
      margin: auto;
      margin-top: 60px;
      margin-bottom: 94px;
-     width: 90px;
+     width: 100px;
+     height: 25px;
    }
 
    .click_seven{
-     width: 18px;
-     height: 18px;
+     padding: 0;
+     width: 20px;
+     height: 20px;
      outline: none;
      background-color:#ffffff;
      border:1px solid #19bd9a;
