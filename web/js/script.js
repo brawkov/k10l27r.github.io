@@ -1,16 +1,12 @@
 jQuery(document).ready(function() {
 
   $('.menuToggle').click(function() {
-    {
-       $('#open').removeAttr('style');
-    }
-    else {
-      $('#open').css({"display":"none"});
-    }
+    $('#open').css({"display":"none"});
     $('nav,#close').slideToggle(500,function(){
       if($(this).css('display') === 'none')
       {
          $(this).removeAttr('style');
+         $('#open').css({"display":"block"});
       }
 
     });
