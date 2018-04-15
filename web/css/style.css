@@ -1,5 +1,5 @@
 body{
-  background:#ffffff;
+  background:#ffffff !important;
   font-family:  Tahoma;
   padding: 0;
   max-width: 1366px;
@@ -206,7 +206,7 @@ section.third{
   margin-bottom: 5px;
   max-width: 460px;
 }
-button{
+.third_button{
   outline: none;
   width: 50px;
   height: 50px;
@@ -216,10 +216,10 @@ button{
   text-decoration:none;
   margin-right: 26px;
 }
-button:last-child{
+.third_button:last-child{
   margin-right: 0px;
 }
-button:hover{
+.third_button:hover{
   background: #19bd9a !important;
 }
 .click_one{
@@ -232,7 +232,7 @@ button:hover{
   margin: 0 auto;
   margin-top:58px;
 }
-button > img{
+.third_button > img{
   display: block;
   margin: 0 auto;
   }
@@ -525,6 +525,9 @@ section.six{
      text-decoration:none;
      margin-right: 10px;
    }
+   .click_seven:last-child{
+     margin-right: 0;
+   }
    .seven_one{
      background-color: #19bd9a;
    }
@@ -668,6 +671,8 @@ section.six{
   border-radius:0;
   float: left;
   color: #ffffff;
+  border:none;
+  text-decoration:none;
 }
 .button_email:hover{
   background-color: #81868e !important;;
@@ -707,7 +712,6 @@ section.eleven{
   margin-top: 20px;
   font-weight: 300;
   text-align:center;
-
 }
 .contact p{
   margin: auto;
@@ -754,11 +758,15 @@ section.twelwe{
   resize: none;
 }
 .write >button{
+  height: 40px;
   width: 100%;
   border-radius: 0;
   background-color: #19bd9a;
   color: #ffffff;
   margin-top: 30px;
+  outline: none;
+  border:none;
+  text-decoration:none;
 }
 .write >button:hover{
   background-color: #81868e !important;;
