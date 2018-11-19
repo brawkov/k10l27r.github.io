@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+
+    <title></title>
+  </head>
+  <body>
+    <div id = "toTop" > &#8679;  </div>
+      <header class="contener">
+        <div class="metods">
+           <input  id="eler"  type="radio"  value="1" name="metod"checked>
+           <label class="eler" for="eler">Метод Эйлера</label>
+            <input id="ry_ky" type="radio" value="0" name="metod">
+            <label for="ry_ky">Метод Рунге-Кутты</label>
+        </div>
+        <div class="h" >
+            <label  for="a">a:<input  id="a" type="number" value="0"></label>
+            <label  for="b">b:<input  id="b" type="number" value="1"></label>
+            <label  for="n">n:<input  id="n" type="number" value="10"></label>
+        </div>
+          <label class="koshi" for="x">y(<input id="x" type="number"  value="0" >)=<input id="y" type="number" value="1"></label>
+        <div class="button_bloc">
+          <input class="button" type="submit" name="submit" value="Решить" onclick="answer()">
+          <input class="button" type="reset" name="reset" value="Очистить" onclick="reset()">
+          <div class="switch">
+            <label class="checkbox">
+              <input type="checkbox" id="graf" onchange="fun1()"/>
+              <div class="checkbox__text">Показать графики</div>
+            </label>
+          </div>
+        </div>
+
+      </header>
+      <script type="text/javascript" src="./js/lab6.js"></script>
+  </body>
+</html>
