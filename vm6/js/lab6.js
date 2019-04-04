@@ -37,52 +37,26 @@ function reset(){
   document.getElementById("y").value = "";
 }
 function f(x,y){
-  var v =2*x;//(2*x-Math.pow(x,y))/x;//x*x-2*y
+  var v =x+y;//(2*x-Math.pow(x,y))/x;//x*x-2*y
   return v;
 }
 function eler1(){
   console.log('eler1');
   var b,a,n,h;
-  var x=[],y=[],num=[],tmp_x,tmp_y;
-  a= +document.getElementById('a').value;
-  b= +document.getElementById('b').value;
-  n= +document.getElementById('n').value;
-  y[0]= +document.getElementById('y').value;
+  var x=[],y=[],num=[];
+  a=document.getElementById('a').value;
+  b=document.getElementById('b').value;
+  n=document.getElementById('n').value;
+  y[0]=document.getElementById('y').value;
   h=(b-a)/n;
   x[0]=a;
-  var i=0,e=0.001;
-  while(x[i]<b){
-    num[i]=i;
-    var tmp1=eler(x[i],y[i],h,i);
-    var tmp2 =eler(x[i],y[i],h/2,i);
-    //y[i+2]=eler(x[i]+h/2,y[i+2],h/2,i);
-    if(((Math.abs(tmp1-tmp2))/3)>e){
-      h=h/2;
-      continue;
+  for (var i = 0; i <=n; i++) {
+     num[i]=i;
+      y[i+1]=+y[i]+h*f(+x[i],+y[i]);
+      x[i+1]=+x[i]+h;
     }
-    x[i+1]=x[i]+h;
-    y[i+1]=tmp1;
-    i++;
-  }
-  //метод эйлера с n шагами
-  /*for (var i = 0; i <=n; i++) {
-      num[i]=i;
-      tmp_x=x[i]+h/2;
-      tmp_y=y[i]+h/2*f(x[i],y[i])
-      y[i+1]=y[i]+h*f(tmp_x,tmp_y);
-      x[i+1]=x[i]+h;
-    }*/
-show(x,y,i,"eler",num);
+show(x,y,n,"eler",num);
 }
-
-function eler(x,y,h,i){
-  //var one_y =+y+h*f(+x,+y);
-  tmp_x=x+h/2;
-  tmp_y=y+h/2*f(x,y)
-  var one_y=y+h*f(tmp_x,tmp_y);
-  return one_y;
-}
-
 function rk(){
   console.log('rk');
   var num=[],x=[],y=[],k1=[],k2=[],k3=[],k4=[];
