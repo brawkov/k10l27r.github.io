@@ -1,0 +1,140 @@
+body{
+  margin: 0;
+  padding: 0;
+  clear: both;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  background-image: url("../wallpaper.png");
+  background-attachment: fixed;
+}
+.contener{
+  background: #fff;
+  width: auto;
+  max-width: 800px;
+  min-width: 500px;
+  border: 1px solid #7e8c8d;
+  margin: 5px auto;
+  min-height: 420px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.ni{
+  margin-top: 20px;
+  height: 35px;
+}
+select{
+  display: block;
+  width: 50px;
+  margin: auto ;
+  text-align: center;
+  font-size: 25px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+  border-radius: 5px;
+}
+select:hover{
+  background: #a2a0a0;
+}
+option{
+  background-color:#d0d0d0;
+}
+.h1{
+  margin: auto;
+  margin-top: 30px;
+  width: 440px;
+  border: 1px solid #524f4e;
+  background: #2EE59D;
+  border-radius: 30px;
+  padding: 15px;
+  font-size: 42px;
+}
+.h{
+  display: block;
+  width: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+input{
+  width: 40px;
+  height: 30px;
+  position: relative;
+  bottom: 3px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.9);
+  margin: 2px;
+}
+#eps{
+  width: 50px;
+}
+h2{
+  text-align: center;
+}
+.koshi{
+  display: block;
+  max-width: 295px;
+  width: auto;
+  margin: auto;
+}
+.button_bloc{
+  max-width:280px;
+  width: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+.button_bloc input{
+  width: auto;
+}
+.button{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 140px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+}
+.button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
+#toTop {
+width:40px;
+border:1px solid #ccc;
+border-radius: 40px;
+background:#2EE59D;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+font-size: 30px;
+color:#fff;
+}
+
+p{
+  min-width: 345px;
+  margin: auto;
+  text-align: center;
+}
