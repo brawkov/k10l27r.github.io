@@ -1,7 +1,30 @@
+/*CSS Reset*/
+* {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: none;
+	padding: 0;
+	margin: 0;
+	}
+body {
+	padding: 5px;
+	}
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, ul, ol, dl {
+	margin: 20px 0;
+	}
+li, dd, blockquote {
+	margin-left: 40px;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
 body{
   background:#ffffff !important;
   font-family:  Tahoma;
-  padding: 0;
   max-width: 1366px;
   min-width: 425px;
   margin: 0 auto;
